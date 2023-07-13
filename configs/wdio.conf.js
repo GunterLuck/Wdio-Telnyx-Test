@@ -52,8 +52,10 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        // capabilities for local browser web tests
-        browserName: 'chrome' // or "firefox", "microsoftedge", "safari"
+        maxInstances: 5,
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+            args: ['--headless', '--window-size=1920,1080']},
     }],
     //
     // ===================
@@ -130,7 +132,7 @@ exports.config = {
         disableWebdriverScreenshotsReporting: false,
     }]],
     afterTest: async function ({ error }) {
-        if (!error) {
+        if (error) {
           await browser.takeScreenshot();
         }
     },

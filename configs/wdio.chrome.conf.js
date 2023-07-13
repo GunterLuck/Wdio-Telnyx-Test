@@ -28,6 +28,11 @@ exports.config = {
         disableWebdriverStepsReporting: true,
         disableWebdriverScreenshotsReporting: false,
     }]],
+    afterTest: async function ({ error }) {
+        if (!error) {
+          await browser.takeScreenshot();
+        }
+    },
 
     mochaOpts: {
         ui: 'bdd',

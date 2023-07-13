@@ -21,7 +21,6 @@ let Text
 let Password
 
 beforeEach(async () => {
-    await browser.setWindowSize(1920, 1080)
     Name = TextGenerator.randomName()
     Email = TextGenerator.randomEmail()
     Number = TextGenerator.randomNumber()

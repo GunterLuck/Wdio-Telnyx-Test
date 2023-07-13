@@ -12,9 +12,7 @@
   },
   "scripts": {
     "wdio": "wdio run ./configs/wdio.conf.js",
-    "wdio-firefox": "npx wdio run ./configs/wdio.firefox.conf.js",
-    "wdio-edge": "npx wdio run ./configs/wdio.edge.conf.js",
-    "wdio-chrome": "npx wdio run ./configs/wdio.chrome.conf.js",
+    "wdio-all-browsers": "npx wdio run ./configs/wdio.crossbrowsers.conf.js",
     "report-generate": "npx allure generate allure-results --clean",
     "report-open": "npx allure open allure-report",
     "wdio:docker": "wdio run ./configs/wdio.docker.conf.js",

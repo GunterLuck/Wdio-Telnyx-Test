@@ -19,8 +19,8 @@ jobs:
     - name: Install dependencies
       run: npm i
       
-    - name: Run Cypress tests
-      run: npx wdio run ./configs/wdio.conf.js
+    - name: Run Wdio tests
+      run: npx wdio run ./configs/wdio.crossbrowsers.conf.js
       
     - name: Reports Generate
       run: npm run report-generate
