@@ -1,4 +1,4 @@
-const submitButton = 'div>button>span:first-child'
+const submitButton = 'button[type="button"]>svg>g>path'
 
 class Coockies {
     async acceptCookie(){
