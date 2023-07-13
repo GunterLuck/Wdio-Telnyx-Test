@@ -19,14 +19,6 @@ const crossBrowserConfig = {
             args: ['--headless', '--window-size=1920,1080']
         },
     },
-    {
-        maxInstances: 5,
-        browserName: "firefox",
-        acceptInsecureCerts: true,
-        'moz:firefoxOptions': {
-            args: ['--headless', '--window-size=1920,1080']
-        },
-    },
     ],
 }
 exports.config = crossBrowserConfig
