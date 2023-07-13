@@ -1,6 +1,6 @@
 const seeIndustriesButton = '[href="#industries"]>span'
 const seeUseCasesButton = '[href="#use-cases"]>span'
-const healthcareButton = '[href="/solutions/healthcare"]'
+const healthcareButton = 'a[href="/solutions/healthcare"]'
 const accountNotificationWindow = 'ul>li:first-child>div'
 
 class SolutionsPage {

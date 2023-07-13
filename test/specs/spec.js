@@ -99,7 +99,7 @@ describe('Testing telnyx with webdriverIO', function() {
         await SolutionsPage.clickSeeUseCasesButton()
         await SolutionsPage.checkAccountNotificationWindowVisibility()
     })
-    it('TX_007 Check that "Confirm email" page is loading after clicking "Submit" button on Sign Up page with filling the correct data ​​in the required fields, form opened via link from the "SMS API" page', async () =>{
+    it('TX_007 Check that "Confirm email" page is loading after clicking "Submit" button on Sign Up page with filling the correct data in the required fields, form opened via link from the "SMS API" page', async () =>{
         await MainPage.clickProductsDropdown()
         await MainPage.clickSmsApiOption()
         await SMSAPIPage.clickPortalButton()
