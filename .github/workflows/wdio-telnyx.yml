@@ -22,12 +22,6 @@ jobs:
     - name: Run Wdio tests
       run: npx wdio run ./configs/wdio.crossbrowsers.conf.js
       
-    - name: Reports Generate
-      run: npm run report-generate
-      
-    - name: Reports Open
-      run: npm run report-open
-    
     - uses: actions/upload-artifact@master
       with:
         name: allure-results
